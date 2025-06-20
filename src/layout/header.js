@@ -8,11 +8,11 @@ export default function Header({ title, back}) {
         <View style={styles.header}>
             { back && 
                 <TouchableOpacity onPress={() => router.back()}>
-                    <Image style={styles.back} source={require("../../assets/back-dark.png")} />
+                    <Image style={styles.back} source={require("../../assets/back-light.png")} />
                 </TouchableOpacity>
             }
             <View style={styles.logo}>
-                <Text style={[ui.h3, { color: colors.accent }]}>{title ? title : "Recuerdos a color"}</Text>
+                <Text style={[ui.h3, { color: colors.accent }]}>{title ? title : "Revive en alta calidad"}</Text>
                 <Image style={{ width: 28, height: 28 }} source={require("../../assets/header-icon.png")} />
             </View>
         </View>
