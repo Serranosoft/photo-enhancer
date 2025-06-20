@@ -13,7 +13,7 @@ export default function Header({ title, back}) {
             }
             <View style={styles.logo}>
                 <Text style={[ui.h3, { color: colors.accent }]}>{title ? title : "Recuerdos a color"}</Text>
-                <Image style={{ width: 24, height: 24 }} source={require("../../assets/header-icon.png")} />
+                <Image style={{ width: 28, height: 28 }} source={require("../../assets/header-icon.png")} />
             </View>
         </View>
     )
@@ -22,17 +22,19 @@ export default function Header({ title, back}) {
 const styles = StyleSheet.create({
     header: {
         flexDirection: "row",
-        gap: 12,
+        gap: 8,
         padding: 16,
         alignItems: "center",
         justifyContent: "space-between",
-        backgroundColor: "#fff",
+        backgroundColor: colors.primary,
+        borderBottomWidth: 2,
+        borderColor: colors.secondary
     },
 
     logo: {
         flexDirection: "row",
         alignItems: "center",
-        gap: 8,
+        gap: 4,
         color: colors.accent,
     },
 

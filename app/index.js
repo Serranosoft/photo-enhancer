@@ -9,7 +9,6 @@ import { deleteRecordFromId, getAllRecords } from "../src/utils/sqlite";
 import GridDeleteWrapper from "../src/layout/home/grid-delete-wrapper";
 
 
-
 export default function Home() {
 
     const [records, setRecords] = useState([]);

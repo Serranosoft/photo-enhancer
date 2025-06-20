@@ -24,7 +24,7 @@ export default function Grid({ records, setSelected, selected }) {
                     onPress={() => router.push("/camera")}
                 >
                     <Image source={require("../../../assets/plus-dark.png")} style={styles.add} />
-                    <Text style={ui.text}>Añadir nueva foto</Text>
+                    <Text style={[ui.text, { color: "#000" }]}>Mejorar foto</Text>
                 </TouchableOpacity>
                 {
                     records && records.length > 0 ?
