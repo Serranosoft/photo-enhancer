@@ -1,6 +1,6 @@
 import { getCredits, updateCredits } from "./sqlite";
 
-export const DAILY_CREDITS = 5;
+export const DAILY_CREDITS = 4;
 
 export async function subtractCredit() {
     const credits = await getCredits();

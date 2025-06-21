@@ -36,7 +36,7 @@ export default function Grid({ records, setSelected, selected }) {
                         :
                         [1, 2, 3, 4, 5].map((_, index) => {
                             return (
-                                <View key={index} style={[styles.box, { height: 150 }]}></View>
+                                <View key={index} style={[styles.box, { height: 215 }]}></View>
                             )
                         })
                 }

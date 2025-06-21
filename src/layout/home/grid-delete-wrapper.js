@@ -7,7 +7,7 @@ export default function GridDeleteWrapper({ selected, emptySelected, deleteRecor
             <TouchableOpacity onPress={() => emptySelected()}>
                 <Image style={styles.icon} source={require("../../../assets/cross-dark.png")} />
             </TouchableOpacity>
-            <Text style={[ui.h4, { textAlign: "center" }]}>{selected.length} elemento(s) seleccionados</Text>
+            <Text style={[ui.h4, { textAlign: "center", color: "#000" }]}>{selected.length} elemento(s) seleccionados</Text>
             <TouchableOpacity onPress={() => deleteRecords()}>
                 <Image style={styles.icon} source={require("../../../assets/trash-dark.png")} />
             </TouchableOpacity>
