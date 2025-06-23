@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { colors, ui } from "../../utils/styles";
-import Compare, { Before, After, DefaultDragger, Dragger } from 'react-native-before-after-slider-v2';
+import Compare, { Before, After, Dragger } from 'react-native-before-after-slider-v2';
 
 export default function Example() {
     return (

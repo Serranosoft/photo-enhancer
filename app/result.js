@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Header from "../src/layout/header";
 import LottieView from 'lottie-react-native';
 import CreditsModal from "../src/layout/credits-modal";
-import Compare, { Before, After, DefaultDragger, Dragger } from 'react-native-before-after-slider-v2';
+import Compare, { Before, After, Dragger } from 'react-native-before-after-slider-v2';
 import { getRecordFromId, insertRecord } from "../src/utils/sqlite";
 import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system';
@@ -53,13 +53,6 @@ export default function Result() {
 
     useEffect(() => {
         init();
-        // setRecord({
-        //     id: 1,
-        //     old_image: "https://replicate.delivery/pbxt/KDMlP32TacO7kGUrnR1DCM0nVfXDrkbe8gnRqSmgYMLHQVqh/Einstein%2C%20Rejection%2C%20and%20Crafting%20a%20Future.jpeg",
-        //     new_image: "https://replicate.delivery/pbxt/78o8s7hxKPayH9CJsQ9O9HkvBP5TD7QaF2X07kfDfGrZAzLSA/out.png",
-        //     filename: "xdd"
-        // })
-
     }, [])
 
     async function init() {

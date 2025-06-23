@@ -7,7 +7,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useEffect, useState } from "react";
 import { router } from "expo-router";
-import Compare, { Before, After, DefaultDragger, Dragger } from 'react-native-before-after-slider-v2';
+import Compare, { Before, After, Dragger } from 'react-native-before-after-slider-v2';
 import { TouchableWithoutFeedback } from "@gorhom/bottom-sheet";
 
 const deviceWidth = Dimensions.get("screen").width;
